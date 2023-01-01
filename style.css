@@ -374,6 +374,45 @@ a{
     display: none;
 }
 
+table{
+	border: solid 5px black;
+	font-family: 'Bahnschrift SemiBold';
+}
+
+table tr th{
+	border: solid 3px black;
+	text-align: center;
+	padding: 5px;
+	margin: 5px;
+	font-size: 20px;
+	color: #fff;
+	background-color:#c82b00 ;
+}
+table tr td{
+	border: solid 3px black;
+	text-align: center;
+	padding: 5px;
+	margin: 5px;
+	font-size: 16px;
+	color: #000;
+}
+
+
+.col.time-table {
+	display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: stretch;
+    flex-direction: row;
+    padding: 2px 0px;
+    flex: 1 0 0%;
+    padding: 2px 0px;
+    justify-content: space-around;
+    margin: 10px 5px;
+    font-size: 20px;
+   	font-weight: bold;
+}
+
 
 /*------------SPONSORS------*/
 
@@ -547,6 +586,17 @@ a{
 	.address{
 		display: none;
 	}
+	table{
+		border: 3px solid black;
+	}
+	table tr th{
+		font-size: 18px;
+		border: 2px solid black;
+	}
+	table tr td{
+		font-size: 14px;
+		border: 2px solid black;
+	}
 }
 
 @media (max-width: 980px) {
@@ -610,6 +660,15 @@ a{
   .logo-1{
   	padding: 20px 0px;
   }
+  .row{
+		flex-direction: column;
+	}
+	.col.time-table{
+		justify-content: center;
+	}
+	table{
+		width: 600px;
+	}
 }
 
 
@@ -712,6 +771,12 @@ a{
 		width: 240px;
 		height: 50px;
 	}
+	.lSAction > .lSPrev{
+		display: none;
+	}
+	.lSAction > .lSNext{
+		display: none;
+	}
 }
 
 @media (max-width:300px)
@@ -725,5 +790,16 @@ a{
 	.event-class{
 		width: 270px;
 		height: 450px;
+	}
+	table{
+		border: 2px solid black;
+	}
+	table tr th{
+		font-size: 16px;
+		border: 1px solid black;
+	}
+	table tr td{
+		font-size: 12px;
+		border: 1px solid black;
 	}
 }
