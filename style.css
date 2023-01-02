@@ -382,6 +382,7 @@ a{
 table{
 	border: solid 5px black;
 	font-family: 'Bahnschrift SemiBold';
+	box-shadow: 12px 12px 20px black;
 }
 
 table tr th{
