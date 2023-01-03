@@ -48,7 +48,7 @@ body
 	display: flex;
 	align-items: center;
 	list-style: none;
-	justify-content: space-around;
+	justify-content: flex-end;
 }
 .nav1 ul{
 	padding-right: 0px;
