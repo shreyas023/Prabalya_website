@@ -28,21 +28,30 @@
 						<li><a href="index.html">Home</a></li>
 						<li><a href="#event">Events</a></li>
 						<li><a href="#sponsors">Sponsors</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</div>
 				<div class="menu-btn">
-					<button id="menu">≡</button>
-					<div class="dropdown">
-						<a href="index.html">Home</a>
-						<a href="#events">Events</a>
-						<a href="#sponsors">Sponsors</a>
-						<a href="#contact">Contact</a>
-					</div>
+					<button class="dropdown-btn" onclick="displayMenu()">≡</button>	
 				</div>
+			</div>
+			<div id="menu" class="dropdown">
+						<a href="index.html" onclick="displayMenu()">Home</a>
+						<a href="#events" onclick="displayMenu()">Events</a>
+						<a href="#sponsors" onclick="displayMenu()">Sponsors</a>
+						<a href="gallery.html" onclick="displayMenu()">Gallery</a>
+						<a href="#contact" onclick="displayMenu()">Contact</a>
 			</div>
 		</div>
 	</div>
+
+	<script type="text/javascript">
+        function displayMenu() {
+  let element = document.getElementById("menu");
+  element.classList.toggle("display-menu");
+}
+    </script>
 
 	<div class="header">
 		
@@ -50,27 +59,38 @@
 
 			<div class="slide animation">
 			  
-			  <img src="images\Slideshow1.png" style="padding-right: 0px;">
+			  <img src="images\Slider (6).jpg" style="padding-right: 0px;">
 			  <div class="text"><a href="#event">PRABALYA 2023</a></div>
 			</div>
 
 			<div class="slide animation">
 			 
-			  <img src="images\Slideshow2.jpeg">
-			  <div class="text"><a href="#event">THE WAIT IS OVER</a></div>
+			  <img src="images\Slider (2).jpg">
+			  <div class="text"><a href="#event">Sports do not build character. They reveal it.</a></div>
 			</div>
 
 			<div class="slide animation">
 			 
-			  <img src="images\Slideshow3.jpg">
-			  <div class="text"><a href="#event">ENROLL NOW!</a></div>
+			  <img src="images\Slider (3).jpg">
+			  <div class="text"><a href="#event">The only way to achieve the impossible is to believe it is possible.</a></div>
 			</div>
 
 			<div class="slide animation">
 			  
-			  </a><img src="images\Slideshow4.jpg">
-			  <div class="text"><a href="#event">IT'S TIME TO PLAY</a></div>
+			  <img src="images\Slider (4).jpg">
+			  <div class="text"><a href="#event">The biggest challenge in sport is not just to win, but to win with style.</a></div>
 			</div>
+			<div class="slide animation">
+			  
+			  <img src="images\Slider (5).jpg" style="padding-right: 0px;">
+			  <div class="text"><a href="#event">Champions keep playing until they get it right.</a></div>
+			</div>
+			<div class="slide animation">
+			  
+			  <img src="images\Slider (1).jpg" style="padding-right: 0px;">
+			  <div class="text"><a href="#event">ENROLL NOW!</a></div>
+			</div>
+
 		</div>
 	
 	</div>
@@ -635,14 +655,6 @@
 		  setTimeout(SlideShow, 2000); 
 		}
 
-		function DropDown() {
-		  var dropdownMenu = document.querySelector('.dropdown');
-		  dropdownMenu.style.display = (dropdownMenu.style.display === 'none') ? 'block' : 'none';
-		  
-		}
-
-		var dropdownBtn = document.querySelector('#menu');
-		dropdownBtn.addEventListener('click', DropDown );
 
 	</script>
 
